@@ -11,11 +11,11 @@ const outsideTemp = null
 
 let userEmail;
 
-const Id = symbol('123')
+// const Id = symbol('123')
 
-const anotherId = symbol('123')
+// const anotherId = symbol('123')
 
-console.log(Id === anotherId)
+// console.log(Id===anotherId)
 
 // Reference Array, Object , Function 
 
@@ -31,5 +31,13 @@ const myFunction = function() {
     console.log("Rahman Khan")
 }
 
+// stack (primitve ) , (heap) (non primitive)
+
+let myName = "Mohmmad Rahman"
+let anothername = myName
+anothername = "Saniya Khan"
+
+console.log(myName)
+console.log(anothername)
 
 
