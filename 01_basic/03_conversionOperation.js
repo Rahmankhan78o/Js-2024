@@ -18,4 +18,12 @@ let isLoggedIn = 0;
 let bolleanLoggedIn = Boolean(isLoggedIn);
 console.log(bolleanLoggedIn)
 
+let str1 = "Rahman"
+let str2 = "Khan"
 
+console.log(str1 + str2)
+
+console.log("1" + 2)
+console.log(1+ "2")
+console.log("1" + 2 +2)
+console.log(2 + 2 + "1");
