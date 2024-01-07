@@ -20,7 +20,7 @@ function loginUsrMessage(username) {
 
 console.log(loginUsrMessage("Rahman"))
 
-function userMessage(username) {
+function userMessage(username ="saniya") {
 
     if(username === undefined){
        console.log("rahman khan dev")
@@ -30,4 +30,38 @@ function userMessage(username) {
     
 }
 
-console.log(userMessage())
+console.log(userMessage(""))
+
+
+// function rest operator 
+
+function userloginMessage(...num1)
+{
+    return num1;
+
+
+}
+
+console.log(userloginMessage(100,500,600))
+
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+
+}
+handleObject({
+    username: "rahmansaniya",
+    price: 200
+})
+
+
+const newArray = [200,300,400,500]
+
+function handleArray(anyArray) {
+    return anyArray[1]
+
+}
+
+console.log(handleArray(newArray))
+
+
