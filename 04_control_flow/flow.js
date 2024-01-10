@@ -14,3 +14,19 @@ if(score > 100) {
     console.log(`rahman coder and , ${power}`)
 }
 // console.log(`user ${power}`) not required for const and let for block scope 
+
+const UserLogedIn = true;
+const debitCard = true;
+const UserGoggleLogedIn = false;
+const UserEmailLogedIn =  true;
+
+if(UserLogedIn && debitCard) {
+    console.log("user buy a Course from Rahman khan ")
+}
+
+if(UserEmailLogedIn || UserGoggleLogedIn ){
+       console.log("user loged in ")
+}
+else{
+    console.log("Password Incorrect")
+}
