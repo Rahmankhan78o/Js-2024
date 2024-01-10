@@ -7,6 +7,8 @@ else{
     console.log("tempreture is very hot")
 }
 
+// >, < , <= , >=  , == ,!= , ===, !==
+
 const score = 200
 
 if(score > 100) {
