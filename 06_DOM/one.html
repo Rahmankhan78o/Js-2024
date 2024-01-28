@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>DOM</title>
+  <style>
+    body{
+      background-color: #212121;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="heading" id="saniya">Dom (Document Object Model) <span style="display: none;">Rahman khan</span>  <h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, autem?</p>
+  <h2>Lorem ipsum dolor sit amet.</h2>
+  <h2>Lorem ipsum dolor sit amet.</h2>
+  <h2>Lorem ipsum dolor sit amet.</h2>
+
+  <h2>Lorem ipsum dolor sit amet.</h2>
+  <h2>Lorem ipsum dolor sit amet.</h2>
+  <script>
+    const myh2 = document.querySelectorAll('h2')
+
+    myh2.forEach(function (li) {
+      li.style.backgroundColor = 'blue'
+      li.style.color = 'red'
+      li.style.padding = '10px'
+    })
+  </script>
+</body>
+</html>
