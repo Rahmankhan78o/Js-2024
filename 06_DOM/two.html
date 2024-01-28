@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Selector</title>
+</head>
+<body>
+  <div class="parent">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+  </div>
+
+  <script>
+    const mytag = document.querySelector('.parent')
+
+    console.log(mytag)
+    console.log(mytag.children)
+    console.log(mytag.children[2].innerHTML)
+    
+    for (let i = 0; i < mytag.children.length; i++) {
+      console.log(mytag.children[i].innerHTML)
+
+      mytag.children[1].style.color = 'orange'
+
+      const dayone = document.querySelector('.day')
+      console.log(dayone.parentElement)
+      console.log(dayone.nextElementSibling)
+
+      console.log(mytag.firstElementChild)
+      console.log(mytag.childNodes)
+
+      
+    }
+  </script>
+</body>
+</html>
