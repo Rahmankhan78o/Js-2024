@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+
+
+</head>
+<body style="background-color: #414141;">
+ 
+  <div>
+    <h2>Rahman khan</h2>
+    <ul id="images">
+
+      <li><img width="200px" src="https://media.istockphoto.com/id/1415862623/photo/outdoor-adventures-in-norway-hammock-relax-in-nature.jpg?s=2048x2048&w=is&k=20&c=hOfoQzfgHa2ZZNtspv-XSo7GwmfaZu7XqhmQd1gIjOU=" id="photoshop" alt="photoshop"></li>
+   
+      <li><img width="200px" id="japan" src="https://media.istockphoto.com/id/1409931022/photo/man-in-yellow-jacket-sitting-on-a-suspension-bridge-over-a-lake-in-olpererhutte-austria.jpg?b=1&s=612x612&w=0&k=20&c=qihMkiJL8EZXthpfhChk-kLeroIUqmExwXvcPyIutkw="  alt="photoshop"></li>
+   
+      <li><img width="200px" id="river" src="https://media.istockphoto.com/id/1409931022/photo/man-in-yellow-jacket-sitting-on-a-suspension-bridge-over-a-lake-in-olpererhutte-austria.jpg?b=1&s=612x612&w=0&k=20&c=qihMkiJL8EZXthpfhChk-kLeroIUqmExwXvcPyIutkw="  alt="photoshop"></li>
+    
+      <li><img width="200px" id="owl" src="https://media.istockphoto.com/id/1426559579/photo/female-tourist-enjoying-watching-hot-air-balloons-flying-in-the-sky-at-rooftop-of-hotel-where.jpg?b=1&s=612x612&w=0&k=20&c=m7qypp0ufhZmNwzF5th48NF0c0oCG8ysuxGr5tBFRKY="  alt="photoshop"></li>
+   
+      <li><img width="200px" id="prayer" src="https://media.istockphoto.com/id/1415862623/photo/outdoor-adventures-in-norway-hammock-relax-in-nature.jpg?s=2048x2048&w=is&k=20&c=hOfoQzfgHa2ZZNtspv-XSo7GwmfaZu7XqhmQd1gIjOU="  alt="photoshop"></li>
+    
+      <li><a href="https://google.com" id="google">Google</a></li>
+    </ul>
+
+    
+  </div>
+
+</body>
+
+<script>
+
+// document.getElementById('owl').onclick = function(){
+//   alert('Rahman khan and saniya khan')
+// }
+
+// attachEvent()
+// jQuery - on
+// type, timestamp, defaultPrevented
+// target, toElements, srcElements , currenTarget,
+// clientX, clientY, screenX, screenY
+// altkey, ctrkey, shiftkey, keyCode
+
+
+// document.getElementById('owl').addEventListener('click' , function() {
+//   alert('owl clicked again')
+// })
+
+document.getElementById('images').addEventListener('click', function(e) {
+  console.log("clikced inside the url")
+} ,false)
+
+document.getElementById('owl').addEventListener('click' , function(e) {
+  console.log('owl clicked');
+  e.stopPropagation()
+}, false)
+
+document.getElementById('google').addEventListener('click' , function(e) {
+ 
+  e.preventDefault()
+  e.stopPropagation()
+  console.log("google clicked");
+ 
+},false)
+
+
+document.querySelector('#images').addEventListener('click' , function(e) {
+
+
+if(e.target.tagName === 'IMG'){
+  console.log(e.target.id)
+  let removeit = e.target.parentNode
+  removeit.remove()
+
+}
+
+})
+
+// event bubbling => bottom to top (false)
+// event capturing => top to bottom (true)
+</script>
+</html>
